@@ -12,6 +12,7 @@ var user=[{
 ]
 
 app.get("/",(req,res)=>{
+
     let count=0;
     for(let i=0;i<user[0].kidney.length;i++)
     {
@@ -20,7 +21,7 @@ app.get("/",(req,res)=>{
             count++;
         }
     }
-    let kkk=`the number of kidneys the user have is ${user[0].kidney.length} and out of them ${count} are healthy `;
+    let kkk=`the hehe number of kidneys the user have is ${user[0].kidney.length} and out of them ${count} are healthy `;
     res.send(kkk)
 })
 app.post("/",(req,res)=>{
